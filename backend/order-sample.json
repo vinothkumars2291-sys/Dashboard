@@ -1,0 +1,16 @@
+{
+  "firstName": "Test",
+  "lastName": "User",
+  "email": "test_user_100@example.com",
+  "phone": "9999999999",
+  "streetAddress": "1 Main St",
+  "city": "Chennai",
+  "state": "TN",
+  "postalCode": "600001",
+  "country": "IN",
+  "product": "Widget",
+  "quantity": 2,
+  "unitPrice": 10.5,
+  "status": "NEW",
+  "createdBy": "admin"
+}

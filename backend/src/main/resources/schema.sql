@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS customer_orders (
+  id BIGINT NOT NULL AUTO_INCREMENT,
+  first_name VARCHAR(100) NOT NULL,
+  last_name VARCHAR(100) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  phone VARCHAR(50) NOT NULL,
+  street_address VARCHAR(255) NOT NULL,
+  city VARCHAR(100) NOT NULL,
+  state VARCHAR(100) NOT NULL,
+  postal_code VARCHAR(30) NOT NULL,
+  country VARCHAR(100) NOT NULL,
+  product VARCHAR(150) NOT NULL,
+  quantity INT NOT NULL,
+  unit_price DECIMAL(19,2) NOT NULL,
+  total_amount DECIMAL(19,2) NOT NULL,
+  status VARCHAR(50) NOT NULL,
+  created_by VARCHAR(100) NOT NULL,
+  created_at DATETIME(6) NOT NULL,
+  PRIMARY KEY (id),
+  INDEX idx_customer_orders_created_at (created_at),
+  INDEX idx_customer_orders_status_created_at (status, created_at),
+  INDEX idx_customer_orders_email (email)
+);
